@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: yyx
+Build-Jdk: 10.0.1
+Implementation-Title: eureka-server-01
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: online.qsx.demo
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/eureka-serve
+ r-01/
+Created-By: Maven Integration for Eclipse
+

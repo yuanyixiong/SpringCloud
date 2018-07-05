@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      label: master
+      profile: pro
+      discovery:
+        enabled: true
+        service-id: eureka-config

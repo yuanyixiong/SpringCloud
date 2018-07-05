@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: eureka-ribbon
+  zipkin:
+    base-url: http://eureka-zipkin
