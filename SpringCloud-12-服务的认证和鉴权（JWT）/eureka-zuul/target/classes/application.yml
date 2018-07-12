@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8770
+spring:
+  application:
+    name: eureka-zuul
+zuul:
+ routes:
+   api-a:
+     path: /api-a/**
+     serviceId: eureka-ribbon
+   api-b:
+     path: /api-b/**
+     serviceId: eureka-feign
+jwt:
+ header: Authorization
+ tokenHead: Bearer
+ signingKey: 666666
+ created: created
+ sub: sub
+ expiration: 10
+ route:
+  authentication:
+    path: auth/login
