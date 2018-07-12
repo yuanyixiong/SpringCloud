@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ rest+ribbon ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½
+ * ·þÎñÏû·ÑÕß rest+ribbon ÄÚÖÃ¸ºÔØ¾ùºâ
  */
 @RestController
 @SpringBootApplication
@@ -29,8 +29,8 @@ public class EurekaribbonApplication {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	// ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ eureka-client
-	// ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÍ¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ eureka-client ï¿½ï¿½ï¿½ï¿½
+	// ¸ºÔØ¾ùºâ eureka-client
+	// ÑéÖ¤¸ºÔØ¾ùºâÐèÒªÍ¬Ê±Æô¶¯¶à¸ö eureka-client ·þÎñ
 	@GetMapping("/hi01")
 	public String hi01() {
 		return restTemplate.getForObject("http://eureka-client/hi?name=arvin01", String.class);
